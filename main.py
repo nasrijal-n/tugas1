@@ -1,17 +1,12 @@
-class bioskop:
-    judul = ''
-    nama = ''
-    jam = ''
+import tkinter
+main_window = tkinter.Tk()
 
-    def __init__(self,judul):
-        self.judul = judul
-    def get_nama (self,nama):
-        self.nama = nama
-    def get_jam(self,jam):
-        self.jam = jam
+tombol_1 = tkinter.Button(main_window, text = "Main Menu")
+tombol_2 = tkinter.Button(main_window, text = "Restart")
+tombol_3 = tkinter.Button(main_window, text = "Option")
 
-a = bioskop('plastic memories')
-a.get_nama('Nasrijal')
-a.get_jam('08:00')
+tombol_1.pack()
+tombol_2.pack()
+tombol_3.pack()
 
-print('judul film : %s\nnama : %s \njam tayang : %s' % (a.judul,a.nama,a.jam))
+main_window.mainloop()
